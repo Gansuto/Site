@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@font-face {
+    font-family: "PixelEmulator";
+    src:
+    url("../css/fonts/PixelEmulator.ttf") format("TrueType");
+}
+@font-face {
+    font-family: "Bubbleboddy";
+    src: url("../css/fonts/bubbleboddy.ttf") format("TrueType");
+}
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background: linear-gradient(to top, #4c4d52, #252627);*/
+    background: linear-gradient(to right, #3b5294, #260242);
+    background-repeat: no-repeat;
+    font-family: "Bubbleboddy", "Raleway", sans-serif;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.9%;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: end;
+    width: 65%;
+    max-width: 1140px;
+    padding-top: 2%;
+}
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 15%;
+    gap: 35px;
+}
+a {
+    text-decoration: none;
+    
+}
+nav>ul>li>a {
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    font-family: "PixelEmulator";
+    box-shadow: 2px 2px 3px #2d0e3e;
+    padding-bottom: 3px;
+    border: 2px solid #BB9602;
+    background-color: #BB9602;
+    padding: 9px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+nav>ul>li>a.active {
+    border: 2px solid #BB9602;
+    background-color: #866c02;
+    box-shadow: 2px 2px 3px #2d0e3e;
+}
+
+a:hover, a:focus, a:active, a:visited {
+    color: none;
+    text-decoration: none;
+}
+
+main {
+    height: auto;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+section {
+    width: 45%;
+    padding: 3%;
+}
+
+#conteneur {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15%;
+}
+
+#gameboy {
+    padding: 5%;
+    background-color: rgba(230, 3, 3, 0.788);
+    border-radius: 20px;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    margin-left: 8%;
+    box-shadow:  6px 6px 6px rgb(41, 38, 38) ;
+    margin-bottom: 0.%;
+}
+#gameboyform {
+    display: flex;
+    flex-direction: column;
+}
+
+#blackpart {
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    align-content: center;
+}
+#greenpart {
+    background-color: #637b10;;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    width: 88%;
+    margin-left: 6%;
+    opacity: 0.9;
+}
+
+#decouvrir {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    padding: 5%;
+    opacity: 0.8;
+    margin-right: 2%;
+    
+}
+h2 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-family: "PixelEmulator";
+    font-size: 15px;
+    flex-wrap: wrap;
+    background-color: #5C46B1;
+    margin: 3%;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center; 
+    box-shadow: 2px 2px 3px #2d0e3e;
+}
+#jeuDePaire>#decouvrir>button {
+    font-size: 18px;
+    color: white;
+    font-family: "PixelEmulator";
+    border: 2px solid #5C46B1;
+    background-color: #5C46B1;
+    box-shadow: 2px 2px 3px #2d0e3e;
+    padding: 9px;
+    border-radius: 30px;
+    height: 60px;
+    margin: 4%;
+}
+
+#jeuDePaire {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    opacity: 0.7;
+    justify-content: center;
+}
+
+.card {
+    height: 85px;
+    width: 85px;
+    margin: 10px;
+    padding: 10px;
+    background: no-repeat;
+}
+
+.gamepads {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15%;
+    padding-left: 5%;
+}
+#buttons {
+    display: flex;
+    gap: 30px;
+    padding: 8%;
+}
+#croix {
+    padding: 3%;
+}
+#plus {
+    padding-top: 20%;
+    align-content: end;
+    height: 70px;
+}
+#moins {
+    align-content: start;
+    padding-bottom: 10%;
+}
+section>h1 {
+    color: white;
+    font-family: "PixelEmulator";
+    text-shadow: 1px 1px 2px black;
+    font-size: 25px;
+    flex-wrap: wrap;
+    padding-top: 25%;
+    margin-right: 10%;
+    line-height: 40px;
+}
+@media screen and (max-width: 768px) {
+
+    * {
+        font-size: 13px;
+        overflow: scroll;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        padding-bottom: 10%;
+    }
+    nav>ul {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        list-style: none;
+        gap: 0%;
+
+    }
+    nav>ul>li {
+        width: 50%;
+        text-align: center;
+    }
+
+    nav>ul>li>a {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: transparent;
+        border: 0px;
+        box-shadow: none;
+    }
+    
+    nav>ul>li>a.active {
+        border: none;
+        border-radius: 0%;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #conteneur {
+        flex-direction: column-reverse;
+        width: 100%
+        
+    }
+    #section2 {
+        width: 100%;
+        overflow: hidden;
+    }
+    section>h1 {
+        font-size: 27px;
+        padding: 0;
+        padding-left: 6%;
+        line-height: 40px;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        width: 95%;
+        overflow: hidden;
+    }
+    #section1 {
+        width: 100%;
+        height: 100%;
+        
+    }
+    #gameboy {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 700px;
+        width: 95%;
+        margin-left: 2%;
+    }
+    #gameboyform {
+        width: 85%;
+        margin-left: 6%;
+        margin-top: 5%;
+    }
+    #blackpart {
+        margin: 0;
+        padding: 0;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    #greenpart {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+
+        margin-left: 5%;
+    }
+    #jeuDePaire {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 3%;
+        justify-content: space-between;
+    }
+
+    .gamepads {
+        margin: 0;
+        padding: 0;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+
+    #buttons {
+        padding: 0;
+        margin: 0;
+        margin-top: 7%;
+    }
+    #plus {
+        padding: 0;
+        margin: 0;
+        padding-top: 25%;
+        overflow: hidden;
+        height: auto;
+    }
+    #moins {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 15%;
+    }
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    * {
+        font-size: 13px;
+        overflow: scroll;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        padding-bottom: 10%;
+    }
+    nav>ul {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        list-style: none;
+        gap: 0%;
+
+    }
+    nav>ul>li {
+        width: 50%;
+        text-align: center;
+    }
+
+    nav>ul>li>a {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: transparent;
+        border: 0px;
+        box-shadow: none;
+    }
+    
+    nav>ul>li>a.active {
+        border: none;
+        border-radius: 0%;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #conteneur {
+        flex-direction: column-reverse;
+        width: 100%
+        
+    }
+    #section2 {
+        width: 100%;
+        overflow: hidden;
+    }
+    section>h1 {
+        font-size: 27px;
+        padding: 0;
+        padding-left: 6%;
+        line-height: 40px;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        width: 95%;
+        overflow: hidden;
+    }
+    #section1 {
+        width: 100%;
+        height: 100%;
+        
+    }
+    #gameboy {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 700px;
+        width: 95%;
+        margin-left: 2%;
+    }
+    #gameboyform {
+        width: 85%;
+        margin-left: 6%;
+        margin-top: 5%;
+    }
+    #blackpart {
+        margin: 0;
+        padding: 0;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    #greenpart {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+
+        margin-left: 5%;
+    }
+    #jeuDePaire {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 3%;
+        justify-content: space-between;
+    }
+
+    .gamepads {
+        margin: 0;
+        padding: 0;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+
+    #buttons {
+        padding: 0;
+        margin: 0;
+        margin-top: 7%;
+    }
+    #plus {
+        padding: 0;
+        margin: 0;
+        padding-top: 25%;
+        overflow: hidden;
+        height: auto;
+    }
+    #moins {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 15%;
+    }
+}

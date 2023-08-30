@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@font-face {
+    font-family: "PixelEmulator";
+    src:
+    url("../css/fonts/PixelEmulator.ttf") format("TrueType");
+}
+@font-face {
+    font-family: "Bubbleboddy";
+    src: url("../css/fonts/bubbleboddy.ttf") format("TrueType");
+}
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background: linear-gradient(to top, #4c4d52, #252627);*/
+    background: linear-gradient(to right, #3b5294, #260242);
+    background-repeat: no-repeat;
+    font-family: "Bubbleboddy", "Raleway", sans-serif;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.95%;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: end;
+    width: 65%;
+    max-width: 1140px;
+    padding-top: 2%;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 15%;
+    gap: 35px;
+}
+a {
+    text-decoration: none;
+    
+}
+nav>ul>li>a {
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    font-family: "PixelEmulator";
+    box-shadow: 2px 2px 3px #2d0e3e;
+    padding-bottom: 3px;
+    border: 2px solid #BB9602;
+    background-color: #BB9602;
+    padding: 9px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover, a:focus, a:active, a:visited {
+    color: none;
+    text-decoration: none;
+}
+nav>ul>li>a.active {
+    border: 2px solid #BB9602;
+    background-color: #866c02;
+    box-shadow: 2px 2px 3px #2d0e3e;
+
+}
+
+
+#conteneur {
+    height: 785px;
+    width: 1300px;
+    margin-left: 15%;
+    margin-right: 30%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+h1 {
+    box-sizing: border-box;
+    width: 50%;
+    font-family: "PixelEmulator";
+    margin-right: 20px;
+    border: 1px solid #1d2e4ec9;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(to right, #0000005e, #000000);
+    border-radius: 30px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px #334f7a;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+
+}
+#contact {
+    list-style-type: none;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 54px;
+    padding-left: 10%;
+    flex-wrap: wrap;
+}
+#contact>li {
+    width: 40%;
+}
+#contact>li>div>img {
+    width: auto;
+    align-items: end;
+}
+ul>li>div>.linkedin {
+    height: 150px;
+    width: 150px;
+}
+ul>li>div>.github {
+    height: 120px;
+    width: 120px;
+    padding-left: 13px;
+    margin-right: 20px;
+}
+ul>li>div>.mail {
+    height: 120px;
+    width: 120px;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+ul>li>div>.cv {
+    height: 150px;
+    width: 150px;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+ul>li>div>.telephone {
+    height: 120px;
+    width: 120px;
+    padding-left: 8%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+}
+ul>li>div>a {
+    color: white;
+    font-family: "PixelEmulator";
+    text-align: center;
+    border-bottom: 1px dashed white;
+    padding-bottom: 2px;
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    * {
+        font-size: 13px;
+        overflow: scroll;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        padding-bottom: 10%;
+    }
+    nav>ul {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        list-style: none;
+        gap: 0%;
+
+    }
+    nav>ul>li {
+        width: 50%;
+        text-align: center;
+    }
+
+    nav>ul>li>a {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: transparent;
+        border: 0px;
+        box-shadow: none;
+    }
+    
+    nav>ul>li>a.active {
+        border: none;
+        border-radius: 0%;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #conteneur {
+        flex-direction: column;
+        width: auto;
+        padding: 0;
+        margin: 0;
+        height: 1200px;
+        gap: 100px;
+        margin-top: 5%;
+
+    }
+    #contact {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 80px;
+        height: max-content;
+    }
+    #contact>li {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+    .inline {
+        padding: 0;
+        margin: 0;
+        margin-left: 20%;
+    }
+
+    ul>li>div>.cv {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 3%;
+    }
+
+    ul>li>div>.telephone {
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+
+    * {
+        font-size: 13px;
+        overflow: scroll;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        padding-bottom: 10%;
+    }
+    nav>ul {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        list-style: none;
+        gap: 0%;
+
+    }
+    nav>ul>li {
+        width: 50%;
+        text-align: center;
+    }
+
+    nav>ul>li>a {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: transparent;
+        border: 0px;
+        box-shadow: none;
+    }
+    
+    nav>ul>li>a.active {
+        border: none;
+        border-radius: 0%;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #conteneur {
+        flex-direction: column;
+        width: auto;
+        padding: 0;
+        margin: 0;
+        height: 1200px;
+        gap: 100px;
+        margin-top: 5%;
+        align-content: center;
+    }
+    #contact {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 80px;
+        height: max-content;
+        align-content: center;
+    }
+    #contact>li {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        align-content: center;
+    }
+    .inline {
+        padding: 0;
+        margin: 0;
+        align-content: center;
+        margin-left: 25%;
+    }
+
+    ul>li>div>.cv {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 3%;
+    }
+
+    ul>li>div>.telephone {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1312px) and (min-width: 992px) {
+
+    * {
+        box-sizing: border-box;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        /*background: linear-gradient(to top, #4c4d52, #252627);*/
+        background: linear-gradient(to right, #3b5294, #260242);
+        background-repeat: no-repeat;
+        font-family: "Bubbleboddy", "Raleway", sans-serif;
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 6%;
+        overflow: scroll;
+        
+    }
+    header {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        justify-content: end;
+        width: 65%;
+        max-width: 1140px;
+        padding-top: 2%;
+    }
+    nav>ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        padding-right: 10%;
+        padding-left: 15%;
+        gap: 35px;
+    }
+    a {
+        text-decoration: none;
+        
+    }
+    nav>ul>li>a {
+        font-size: 20px;
+        width: 100%;
+        color: white;
+        font-family: "PixelEmulator";
+        box-shadow: 2px 2px 3px #2d0e3e;
+        padding-bottom: 3px;
+        border: 2px solid #BB9602;
+        background-color: #BB9602;
+        padding: 9px;
+        padding-left: 13px;
+        padding-right: 13px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    a:hover, a:focus, a:active, a:visited {
+        color: none;
+        text-decoration: none;
+    }
+    
+    nav>ul>li>a.active {
+        border: 2px solid #BB9602;
+        background-color: #866c02;
+        box-shadow: 2px 2px 3px #2d0e3e;
+    }
+    
+    main {
+        height: auto;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    #conteneur {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        margin-top: 10%;
+        gap: 120px;
+        
+    }
+    #contact {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 80px;
+        height: max-content;
+        align-content: center;
+    }
+    #contact>li {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        align-content: center;
+    }
+    .inline {
+        padding: 0;
+        margin: 0;
+        align-content: center;
+        margin-left: 25%;
+    }
+
+    ul>li>div>.cv {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 3%;
+    }
+
+    ul>li>div>.telephone {
+        padding: 0;
+        margin: 0;
+    }
+}
